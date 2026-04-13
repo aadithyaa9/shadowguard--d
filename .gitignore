@@ -1,0 +1,17 @@
+# Go binaries
+nids-agent/nids-agent
+nids-agent/data-collector
+
+# Python Environment
+nids-ml/venv/
+__pycache__/
+
+.venv
+# Data & Temp Files
+*.csv
+!nids-ml/sample.csv  # Keep the sample file for testing
+nids-agent/temp_batch.csv
+nids-ml/new_outputs/
+
+# Redundant Archives
+*.zip
