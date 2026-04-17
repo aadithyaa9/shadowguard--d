@@ -1,0 +1,390 @@
+2026-04-14T05:03:13Z [SYSTEM] ShadowGuard-D starting up
+2026-04-14T05:04:30Z [SYSTEM] ShadowGuard-D starting up
+2026-04-14T05:07:27Z [SYSTEM] ShadowGuard-D starting up
+2026-04-14T05:42:58Z [SYSTEM] Graceful shutdown initiated
+2026-04-14T05:44:40Z [SYSTEM] ShadowGuard-D starting up
+2026-04-14T05:46:25Z [SYSTEM] Graceful shutdown initiated
+2026-04-14T05:46:29Z [SYSTEM] ShadowGuard-D starting up
+2026-04-14T05:48:54Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T05:48:54Z [FIREWALL] 🛡️  Active Defense triggered — blocking 10.101.1.10
+2026-04-14T05:48:54Z [FIREWALL] ✅ 10.101.1.10 isolated at kernel level.
+2026-04-14T05:48:59Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.11! (16 unique ports in 5s)
+2026-04-14T05:48:59Z [FIREWALL] 🛡️  Active Defense triggered — blocking 10.101.1.11
+2026-04-14T05:48:59Z [FIREWALL] ✅ 10.101.1.11 isolated at kernel level.
+2026-04-14T05:49:05Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T05:49:10Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.11! (16 unique ports in 5s)
+2026-04-14T05:49:15Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T05:49:20Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.11! (16 unique ports in 5s)
+2026-04-14T05:49:25Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T05:49:29Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T05:49:34Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.11! (16 unique ports in 5s)
+2026-04-14T05:49:39Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T05:49:44Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.11! (16 unique ports in 5s)
+2026-04-14T05:50:07Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T05:50:12Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.11! (16 unique ports in 5s)
+2026-04-14T05:50:16Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T05:50:21Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.11! (16 unique ports in 5s)
+2026-04-14T05:50:49Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T05:50:54Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.11! (16 unique ports in 5s)
+2026-04-14T05:51:30Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.11! (16 unique ports in 5s)
+2026-04-14T05:51:56Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T05:52:01Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.11! (16 unique ports in 5s)
+2026-04-14T05:52:12Z [SYSTEM] Graceful shutdown initiated
+2026-04-14T05:52:22Z [SYSTEM] ShadowGuard-D starting up
+2026-04-14T05:52:47Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T05:52:47Z [FIREWALL] 🛡️  Active Defense triggered — blocking 10.101.1.10
+2026-04-14T05:52:47Z [FIREWALL] ✅ 10.101.1.10 isolated at kernel level.
+2026-04-14T05:52:52Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.11! (16 unique ports in 5s)
+2026-04-14T05:52:52Z [FIREWALL] 🛡️  Active Defense triggered — blocking 10.101.1.11
+2026-04-14T05:52:52Z [FIREWALL] ✅ 10.101.1.11 isolated at kernel level.
+2026-04-14T05:53:28Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.11! (16 unique ports in 5s)
+2026-04-14T05:53:53Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T05:53:54Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T05:53:59Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.11! (16 unique ports in 5s)
+2026-04-14T05:54:05Z [SYSTEM] Graceful shutdown initiated
+2026-04-14T05:58:37Z [SYSTEM] ShadowGuard-D starting up
+2026-04-14T06:00:30Z [SYSTEM] Graceful shutdown initiated
+2026-04-14T06:00:36Z [SYSTEM] ShadowGuard-D starting up
+2026-04-14T06:02:04Z [SYSTEM] Graceful shutdown initiated
+2026-04-14T06:02:34Z [SYSTEM] ShadowGuard-D starting up
+2026-04-14T06:03:28Z [SYSTEM] Graceful shutdown initiated
+2026-04-14T06:03:45Z [SYSTEM] ShadowGuard-D starting up
+2026-04-14T06:04:48Z [SYSTEM] Graceful shutdown initiated
+2026-04-14T06:04:58Z [SYSTEM] ShadowGuard-D starting up
+2026-04-14T06:05:45Z [SYSTEM] Graceful shutdown initiated
+2026-04-14T06:06:05Z [SYSTEM] ShadowGuard-D starting up
+2026-04-14T06:06:51Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.11! (16 unique ports in 5s)
+2026-04-14T06:06:51Z [FIREWALL] 🛡️  Active Defense triggered — blocking 10.101.1.11
+2026-04-14T06:06:51Z [FIREWALL] ✅ 10.101.1.11 isolated at kernel level.
+2026-04-14T06:06:56Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T06:06:56Z [FIREWALL] 🛡️  Active Defense triggered — blocking 10.101.1.10
+2026-04-14T06:06:56Z [FIREWALL] ✅ 10.101.1.10 isolated at kernel level.
+2026-04-14T06:07:11Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T06:07:27Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T06:07:34Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T06:07:38Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.11! (16 unique ports in 5s)
+2026-04-14T06:07:43Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T06:07:48Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.11! (16 unique ports in 5s)
+2026-04-14T06:08:33Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T06:09:08Z [HEURISTIC ALERT] 🚨 Port Scan from 2401:4900:628c:ebc1::de! (16 unique ports in 5s)
+2026-04-14T06:09:08Z [FIREWALL] 🛡️  Active Defense triggered — blocking 2401:4900:628c:ebc1::de
+2026-04-14T06:09:08Z [FIREWALL ERROR] Failed to block 2401:4900:628c:ebc1::de: exit status 2
+2026-04-14T06:09:59Z [SYSTEM] Graceful shutdown initiated
+2026-04-14T06:10:12Z [SYSTEM] ShadowGuard-D starting up
+2026-04-14T06:10:19Z [SYSTEM] ShadowGuard-D starting up
+2026-04-14T06:10:26Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.11! (16 unique ports in 5s)
+2026-04-14T06:10:26Z [FIREWALL] 🛡️  Active Defense triggered — blocking 10.101.1.11
+2026-04-14T06:10:26Z [FIREWALL] ✅ 10.101.1.11 isolated at kernel level.
+2026-04-14T06:11:35Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T06:11:35Z [FIREWALL] 🛡️  Active Defense triggered — blocking 10.101.1.10
+2026-04-14T06:11:35Z [FIREWALL] ✅ 10.101.1.10 isolated at kernel level.
+2026-04-14T06:12:00Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.11! (16 unique ports in 5s)
+2026-04-14T06:12:06Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T06:12:43Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.115! (16 unique ports in 5s)
+2026-04-14T06:12:43Z [FIREWALL] 🛡️  Active Defense triggered — blocking 10.125.204.115
+2026-04-14T06:12:43Z [FIREWALL] ✅ 10.125.204.115 isolated at kernel level.
+2026-04-14T06:12:47Z [HEURISTIC ALERT] 🚨 Port Scan from 2401:4900:628c:ebc1::de! (16 unique ports in 5s)
+2026-04-14T06:12:47Z [FIREWALL] 🛡️  Active Defense triggered — blocking 2401:4900:628c:ebc1::de
+2026-04-14T06:12:47Z [FIREWALL ERROR] Failed to block 2401:4900:628c:ebc1::de: exit status 2
+2026-04-14T06:19:11Z [SYSTEM] Graceful shutdown initiated
+2026-04-14T06:19:29Z [SYSTEM] ShadowGuard-D starting up
+2026-04-14T06:19:43Z [SYSTEM] Graceful shutdown initiated
+2026-04-14T06:19:50Z [SYSTEM] ShadowGuard-D starting up
+2026-04-14T06:21:14Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T06:21:14Z [FIREWALL] 🛡️  Active Defense triggered — blocking 10.101.1.10
+2026-04-14T06:21:14Z [FIREWALL] ✅ 10.101.1.10 isolated at kernel level.
+2026-04-14T06:21:19Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.11! (16 unique ports in 5s)
+2026-04-14T06:21:19Z [FIREWALL] 🛡️  Active Defense triggered — blocking 10.101.1.11
+2026-04-14T06:21:19Z [FIREWALL] ✅ 10.101.1.11 isolated at kernel level.
+2026-04-14T06:21:23Z [SYSTEM] Graceful shutdown initiated
+2026-04-14T06:24:07Z [SYSTEM] ShadowGuard-D starting up
+2026-04-14T06:24:41Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.11! (16 unique ports in 5s)
+2026-04-14T06:24:41Z [FIREWALL] 🛡️  Active Defense triggered — blocking 10.101.1.11
+2026-04-14T06:24:41Z [FIREWALL] ✅ 10.101.1.11 isolated at kernel level.
+2026-04-14T06:24:46Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T06:24:46Z [FIREWALL] 🛡️  Active Defense triggered — blocking 10.101.1.10
+2026-04-14T06:24:46Z [FIREWALL] ✅ 10.101.1.10 isolated at kernel level.
+2026-04-14T06:24:51Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.11! (16 unique ports in 5s)
+2026-04-14T06:24:56Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T06:25:08Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T06:25:23Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T06:25:28Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.11! (16 unique ports in 5s)
+2026-04-14T06:25:34Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T06:25:49Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T11:34:22Z [SYSTEM] ShadowGuard-D starting up
+2026-04-14T11:35:54Z [SYSTEM] Graceful shutdown initiated
+2026-04-14T11:36:05Z [SYSTEM] ShadowGuard-D starting up
+2026-04-14T11:37:11Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T11:37:11Z [FIREWALL] 🛡️  Active Defense triggered — blocking 10.101.1.10
+2026-04-14T11:37:11Z [FIREWALL] ✅ 10.101.1.10 isolated at kernel level.
+2026-04-14T11:37:13Z [SYSTEM] Graceful shutdown initiated
+2026-04-14T11:37:23Z [SYSTEM] ShadowGuard-D starting up
+2026-04-14T11:37:35Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T11:37:35Z [FIREWALL] 🛡️  Active Defense triggered — blocking 10.101.1.10
+2026-04-14T11:37:35Z [FIREWALL] ✅ 10.101.1.10 isolated at kernel level.
+2026-04-14T11:37:40Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.11! (16 unique ports in 5s)
+2026-04-14T11:37:40Z [FIREWALL] 🛡️  Active Defense triggered — blocking 10.101.1.11
+2026-04-14T11:37:40Z [FIREWALL] ✅ 10.101.1.11 isolated at kernel level.
+2026-04-14T11:37:45Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T11:37:50Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.11! (16 unique ports in 5s)
+2026-04-14T11:37:59Z [SYSTEM] Graceful shutdown initiated
+2026-04-14T11:38:23Z [SYSTEM] ShadowGuard-D starting up
+2026-04-14T11:38:25Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.11! (16 unique ports in 5s)
+2026-04-14T11:38:25Z [FIREWALL] 🛡️  Active Defense triggered — blocking 10.101.1.11
+2026-04-14T11:38:25Z [FIREWALL] ✅ 10.101.1.11 isolated at kernel level.
+2026-04-14T11:38:31Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T11:38:31Z [FIREWALL] 🛡️  Active Defense triggered — blocking 10.101.1.10
+2026-04-14T11:38:31Z [FIREWALL] ✅ 10.101.1.10 isolated at kernel level.
+2026-04-14T11:38:56Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.11! (16 unique ports in 5s)
+2026-04-14T11:39:32Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.11! (16 unique ports in 5s)
+2026-04-14T11:39:38Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T11:40:13Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T11:40:39Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.11! (16 unique ports in 5s)
+2026-04-14T11:40:44Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T11:41:20Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T11:41:46Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.11! (16 unique ports in 5s)
+2026-04-14T11:41:51Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T11:42:17Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.11! (16 unique ports in 5s)
+2026-04-14T11:42:22Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T11:42:48Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.11! (16 unique ports in 5s)
+2026-04-14T11:43:24Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.11! (16 unique ports in 5s)
+2026-04-14T11:43:29Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T11:44:05Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T11:44:31Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.11! (16 unique ports in 5s)
+2026-04-14T11:45:07Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.11! (16 unique ports in 5s)
+2026-04-14T11:45:12Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T11:45:48Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T11:45:53Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.11! (16 unique ports in 5s)
+2026-04-14T11:46:29Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.11! (16 unique ports in 5s)
+2026-04-14T11:46:55Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T11:47:00Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.11! (16 unique ports in 5s)
+2026-04-14T11:47:46Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T11:47:51Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.11! (16 unique ports in 5s)
+2026-04-14T11:48:22Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T11:48:24Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.11! (16 unique ports in 5s)
+2026-04-14T11:48:29Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T11:48:34Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.11! (16 unique ports in 5s)
+2026-04-14T11:48:55Z [SYSTEM] Graceful shutdown initiated
+2026-04-14T11:59:07Z [SYSTEM] ShadowGuard-D starting up
+2026-04-14T11:59:46Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T11:59:46Z [FIREWALL] 🛡️  Active Defense triggered — blocking 10.101.1.10
+2026-04-14T11:59:46Z [FIREWALL] ✅ 10.101.1.10 isolated at kernel level.
+2026-04-14T11:59:46Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T11:59:51Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T11:59:52Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T11:59:54Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T12:00:01Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.11! (16 unique ports in 5s)
+2026-04-14T12:00:01Z [FIREWALL] 🛡️  Active Defense triggered — blocking 10.101.1.11
+2026-04-14T12:00:01Z [FIREWALL] ✅ 10.101.1.11 isolated at kernel level.
+2026-04-14T12:00:06Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.11! (16 unique ports in 5s)
+2026-04-14T12:00:14Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T12:00:55Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.11! (16 unique ports in 5s)
+2026-04-14T12:00:55Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.11! (16 unique ports in 5s)
+2026-04-14T12:00:56Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.11! (16 unique ports in 5s)
+2026-04-14T12:01:32Z [SYSTEM] Graceful shutdown initiated
+2026-04-14T12:02:11Z [SYSTEM] ShadowGuard-D starting up
+2026-04-14T12:04:24Z [SYSTEM] ShadowGuard-D starting up
+2026-04-14T12:05:52Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.11! (16 unique ports in 5s)
+2026-04-14T12:05:52Z [FIREWALL] 🛡️  Active Defense triggered — blocking 10.101.1.11
+2026-04-14T12:05:52Z [FIREWALL] ✅ 10.101.1.11 isolated at kernel level.
+2026-04-14T12:05:58Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T12:05:58Z [FIREWALL] 🛡️  Active Defense triggered — blocking 10.101.1.10
+2026-04-14T12:05:58Z [FIREWALL] ✅ 10.101.1.10 isolated at kernel level.
+2026-04-14T12:06:11Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T12:06:26Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T12:06:32Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.11! (16 unique ports in 5s)
+2026-04-14T12:06:37Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T12:06:52Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T12:06:58Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.11! (16 unique ports in 5s)
+2026-04-14T12:06:59Z [SYSTEM] Graceful shutdown initiated
+2026-04-14T12:08:21Z [SYSTEM] ShadowGuard-D starting up
+2026-04-14T12:08:29Z [SYSTEM] Graceful shutdown initiated
+2026-04-14T12:08:52Z [SYSTEM] ShadowGuard-D starting up
+2026-04-14T12:09:54Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T12:09:54Z [FIREWALL] 🛡️  Active Defense triggered — blocking 10.101.1.10
+2026-04-14T12:09:54Z [FIREWALL] ✅ 10.101.1.10 isolated at kernel level.
+2026-04-14T12:09:56Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T12:10:01Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.11! (16 unique ports in 5s)
+2026-04-14T12:10:01Z [FIREWALL] 🛡️  Active Defense triggered — blocking 10.101.1.11
+2026-04-14T12:10:01Z [FIREWALL] ✅ 10.101.1.11 isolated at kernel level.
+2026-04-14T12:10:06Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-14T12:10:11Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.11! (16 unique ports in 5s)
+2026-04-14T12:10:46Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.11! (16 unique ports in 5s)
+2026-04-14T12:10:51Z [HEURISTIC ALERT] 🚨 Port Scan from 10.101.1.10! (16 unique ports in 5s)
+2026-04-15T17:21:06Z [SYSTEM] ShadowGuard-D starting up
+2026-04-15T17:24:01Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:24:01Z [FIREWALL] 🛡️  Active Defense triggered — blocking 10.125.204.190
+2026-04-15T17:24:01Z [FIREWALL] ✅ 10.125.204.190 isolated at kernel level.
+2026-04-15T17:24:02Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:24:03Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:24:04Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:24:05Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:24:07Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:24:09Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:24:09Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:24:09Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:24:11Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:24:12Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:24:12Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:24:13Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:24:15Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:24:15Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:24:17Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:24:18Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:24:19Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:24:20Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:24:22Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:24:22Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:24:23Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:24:25Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:24:26Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:24:27Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:24:28Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:24:29Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:24:31Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:24:32Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:24:33Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:24:33Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:24:35Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:24:36Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:24:37Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:25:14Z [HEURISTIC ALERT] 🚨 Port Scan from 2401:4900:6293:a9db::61! (16 unique ports in 5s)
+2026-04-15T17:25:14Z [FIREWALL] 🛡️  Active Defense triggered — blocking 2401:4900:6293:a9db::61
+2026-04-15T17:25:14Z [FIREWALL ERROR] Failed to block 2401:4900:6293:a9db::61: exit status 2
+2026-04-15T17:26:18Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:26:19Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:26:20Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:26:21Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:26:22Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:26:23Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:26:24Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:26:25Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:26:26Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:26:27Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:26:28Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:26:29Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:26:30Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:26:31Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:26:32Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:26:33Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:26:35Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:26:35Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:26:37Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:26:38Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:26:38Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:26:40Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:26:40Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:26:41Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:26:42Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:26:43Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:26:44Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:26:45Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:26:46Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:26:47Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:26:48Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:26:49Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:26:50Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:26:51Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:26:52Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:26:53Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:26:54Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:26:55Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:26:56Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:26:57Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:26:59Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:26:59Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:27:00Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:27:01Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:27:02Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:27:03Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:27:04Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:27:05Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:27:06Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:27:07Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:27:09Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:27:09Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:27:10Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:27:11Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:27:12Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:27:34Z [SYSTEM] Graceful shutdown initiated
+2026-04-15T17:27:57Z [SYSTEM] ShadowGuard-D starting up
+2026-04-15T17:28:19Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:28:19Z [FIREWALL] 🛡️  Active Defense triggered — blocking 10.125.204.190
+2026-04-15T17:28:19Z [FIREWALL] ✅ 10.125.204.190 isolated at kernel level.
+2026-04-15T17:28:20Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:28:21Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:28:22Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:28:23Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:28:24Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:28:25Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:28:26Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:28:27Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:28:28Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:28:29Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:28:30Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:28:31Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:28:32Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:28:34Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:28:34Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:28:35Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:28:36Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-15T17:29:36Z [SYSTEM] Graceful shutdown initiated
+2026-04-16T03:40:21Z [SYSTEM] ShadowGuard-D starting up
+2026-04-16T03:40:29Z [HEURISTIC ALERT] 🚨 Port Scan from 52.42.183.1! (16 unique ports in 5s)
+2026-04-16T03:40:29Z [FIREWALL] 🛡️  Active Defense triggered — blocking 52.42.183.1
+2026-04-16T03:40:29Z [FIREWALL] ✅ 52.42.183.1 isolated at kernel level.
+2026-04-16T03:40:30Z [HEURISTIC ALERT] 🚨 Port Scan from 52.42.183.1! (16 unique ports in 5s)
+2026-04-16T03:40:38Z [HEURISTIC ALERT] 🚨 Port Scan from 2401:4900:caa2:57c6::c3! (16 unique ports in 5s)
+2026-04-16T03:40:38Z [FIREWALL] 🛡️  Active Defense triggered — blocking 2401:4900:caa2:57c6::c3
+2026-04-16T03:40:38Z [FIREWALL ERROR] Failed to block 2401:4900:caa2:57c6::c3: exit status 2
+2026-04-16T03:40:41Z [SYSTEM] Graceful shutdown initiated
+2026-04-16T03:41:02Z [SYSTEM] ShadowGuard-D starting up
+2026-04-16T03:43:12Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-16T03:43:12Z [FIREWALL] 🛡️  Active Defense triggered — blocking 10.125.204.190
+2026-04-16T03:43:12Z [FIREWALL] ✅ 10.125.204.190 isolated at kernel level.
+2026-04-16T03:43:13Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-16T03:43:14Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-16T03:43:15Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-16T03:43:16Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-16T03:43:17Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-16T03:43:18Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-16T03:43:19Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-16T03:43:20Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-16T03:43:21Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-16T03:43:22Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-16T03:43:24Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-16T03:43:25Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-16T03:43:26Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-16T03:43:27Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-16T03:43:29Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-16T03:43:30Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-16T03:43:31Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-16T03:43:32Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-16T03:43:33Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-16T03:43:34Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-16T03:43:35Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-16T03:43:36Z [SYSTEM] Graceful shutdown initiated
+2026-04-16T04:21:36Z [SYSTEM] ShadowGuard-D starting up
+2026-04-16T04:22:04Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-16T04:22:04Z [FIREWALL] 🛡️  Active Defense triggered — blocking 10.125.204.190
+2026-04-16T04:22:04Z [FIREWALL] ✅ 10.125.204.190 isolated at kernel level.
+2026-04-16T04:22:05Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-16T04:22:06Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-16T04:22:07Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-16T04:22:08Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-16T04:22:09Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-16T04:22:10Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-16T04:22:11Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-16T04:22:12Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-16T04:22:13Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-16T04:22:15Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-16T04:22:15Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-16T04:22:16Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-16T04:22:17Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-16T04:22:18Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-16T04:22:19Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-16T04:22:20Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-16T04:22:21Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-16T04:22:22Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-16T04:22:23Z [HEURISTIC ALERT] 🚨 Port Scan from 10.125.204.190! (16 unique ports in 5s)
+2026-04-16T15:50:39Z [SYSTEM] Graceful shutdown initiated

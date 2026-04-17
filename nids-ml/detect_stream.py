@@ -1,105 +1,260 @@
-import os
+"""
+detect_stream.py — ShadowGuard-D ML Inference Engine
+======================================================
+Reads CSV feature vectors from stdin (one line per flow),
+outputs a classification line per input to stdout.
+
+Output format:
+  <label>,rf=<rf_label>,ae=<ae_score>,conf=<rf_conf>
+  where label = 0 (benign) or 1 (malicious)
+
+Writes READY to stdout when models are loaded and ready.
+"""
+
 import sys
-import warnings
-
-import joblib
+import os
+import pickle
 import numpy as np
-import pandas as pd
-import tensorflow as tf
-from tensorflow.keras import layers, models
 
-warnings.filterwarnings("ignore", message="X does not have valid feature names")
+# ── Suppress TF/Keras noise ──────────────────────────────────────────────────
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
 os.environ["TF_ENABLE_ONEDNN_OPTS"] = "0"
 
-# -------------------------------------------------
-# Resolve absolute path (critical for Go execution)
-# -------------------------------------------------
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+import warnings
+warnings.filterwarnings("ignore")
 
-# -------------------------------------------------
-# Load models & artifacts (Happens exactly ONCE)
-# -------------------------------------------------
-rf_model = joblib.load(os.path.join(BASE_DIR, "rf_model.pkl"))
-scaler = joblib.load(os.path.join(BASE_DIR, "scaler_real.pkl"))
-threshold = joblib.load(os.path.join(BASE_DIR, "ae_threshold_real1.pkl"))
-feature_order = joblib.load(os.path.join(BASE_DIR, "feature_order.pkl"))
+import tensorflow as tf
+tf.get_logger().setLevel("ERROR")
 
-# -------------------------------------------------
-# FIX: Manually rebuild architecture to bypass Keras version mismatch
-# -------------------------------------------------
-input_dim = len(feature_order)
+# ── Constants ────────────────────────────────────────────────────────────────
 
-autoencoder = models.Sequential([
-    layers.Dense(8, activation='relu', input_shape=(input_dim,)),
-    layers.Dense(4, activation='relu'),
-    layers.Dense(8, activation='relu'),
-    layers.Dense(input_dim, activation='linear')
-])
+FEATURE_DIM       = 17
+RF_MODEL_PATH     = "rf_model.pkl"
+AE_MODEL_PATH     = "autoencoder_real_fixed.h5"
+SCALER_PATH       = "scaler_real.pkl"
+THRESHOLD_PATH    = "ae_threshold_real1.pkl"
+FEAT_ORDER_PATH   = "feature_order.pkl"
 
-# Load weights only from the .h5 file
-autoencoder.load_weights(os.path.join(BASE_DIR, "autoencoder_real_fixed.h5"))
+# Fallback paths if real-data models not found
+AE_FALLBACK_PATH  = "autoencoder_model.h5"
+SCALER_FALLBACK   = "scaler.pkl"
+THRESH_FALLBACK   = "ae_threshold.pkl"
 
-# -------------------------------------------------
-# Hybrid Prediction Logic
-# -------------------------------------------------
-def predict_flow(flow_row):
-    # Ensure correct feature order and numeric dtype
-    feature_vector = np.array(flow_row[feature_order], dtype=np.float32).reshape(1, -1)
+# Feature names (must match Go's feature vector order)
+FEATURE_NAMES = [
+    "server_port", "fwd_pkts", "bwd_pkts", "fwd_bytes", "bwd_bytes",
+    "min_len", "max_len", "mean_len", "std_len", "duration",
+    "mean_iat", "std_iat", "syn", "ack", "fin", "rst", "psh"
+]
 
-    # ---- Random Forest Path ----
-    rf_pred = rf_model.predict(feature_vector)[0]
-    rf_prob = rf_model.predict_proba(feature_vector)[0][1]
+# ── Helpers ──────────────────────────────────────────────────────────────────
 
-    if rf_pred == 1:
-        return 1, float(rf_prob), 0.0
+def _try_load_one(path: str):
+    """
+    Try every known deserialization strategy for a single path.
+    Returns the object on success, raises on hard failure, returns None if
+    file not found.
+    """
+    if not os.path.exists(path):
+        return None
 
-    # ---- Autoencoder Path ----
-    scaled_vector = scaler.transform(feature_vector)
+    # 1. Standard pickle
+    try:
+        with open(path, "rb") as f:
+            return pickle.load(f)
+    except pickle.UnpicklingError as e:
+        print(f"[ML] pickle failed for {path}: {e}", file=sys.stderr)
+    except Exception as e:
+        print(f"[ML] pickle error for {path}: {e}", file=sys.stderr)
 
-    reconstructed = autoencoder.predict(scaled_vector, verbose=0)
+    # 2. joblib (sklearn saves with joblib internally in newer versions)
+    try:
+        import joblib
+        return joblib.load(path)
+    except ImportError:
+        pass
+    except Exception as e:
+        print(f"[ML] joblib failed for {path}: {e}", file=sys.stderr)
 
-    error = float(np.mean(np.square(scaled_vector - reconstructed)))
+    # 3. pickle with encoding fallbacks (Python 2 → 3 cross-version)
+    for encoding in ("latin-1", "bytes", "ASCII"):
+        try:
+            with open(path, "rb") as f:
+                return pickle.load(f, encoding=encoding)
+        except Exception:
+            pass
 
-    if error > threshold:
-        return 1, float(rf_prob), error
+    print(f"[ML ERROR] All load strategies failed for {path}.", file=sys.stderr)
+    print(f"[ML ERROR] This usually means the model was saved with a different",
+          file=sys.stderr)
+    print(f"[ML ERROR] Python/sklearn version. Fix: run  python fix_models.py",
+          file=sys.stderr)
+    return None
+
+
+def _load_pickle(path, fallback=None):
+    obj = _try_load_one(path)
+    if obj is not None:
+        return obj
+    if fallback:
+        obj = _try_load_one(fallback)
+        if obj is not None:
+            print(f"[ML] Used fallback: {fallback}", file=sys.stderr)
+            return obj
+    return None
+
+
+def _load_keras(path, fallback=None):
+    for p in ([path] + ([fallback] if fallback else [])):
+        if not p or not os.path.exists(p):
+            continue
+        # Try .keras / SavedModel / legacy .h5
+        for kwargs in [
+            {"compile": False},
+            {"compile": False, "safe_mode": False},
+        ]:
+            try:
+                return tf.keras.models.load_model(p, **kwargs)
+            except TypeError:
+                # safe_mode not supported in older TF
+                try:
+                    return tf.keras.models.load_model(p, compile=False)
+                except Exception:
+                    pass
+            except Exception as e:
+                print(f"[ML] Keras load failed ({p}): {e}", file=sys.stderr)
+                break
+    return None
+
+
+def reorder_features(raw: np.ndarray, feat_order) -> np.ndarray:
+    """Reorder Go feature vector to match training feature order if available."""
+    if feat_order is None:
+        return raw
+    try:
+        indices = [FEATURE_NAMES.index(f) for f in feat_order if f in FEATURE_NAMES]
+        if len(indices) == raw.shape[1]:
+            return raw[:, indices]
+    except Exception:
+        pass
+    return raw
+
+
+# ── Model Loading ────────────────────────────────────────────────────────────
+
+def load_models():
+    print("[ML] Loading Random Forest...", file=sys.stderr)
+    rf = _load_pickle(RF_MODEL_PATH)
+    if rf is None:
+        print("[ML WARNING] rf_model.pkl not found — RF path will always return benign.", file=sys.stderr)
+
+    print("[ML] Loading Autoencoder...", file=sys.stderr)
+    ae = _load_keras(AE_MODEL_PATH, AE_FALLBACK_PATH)
+    if ae is None:
+        print("[ML WARNING] Autoencoder model not found — AE path disabled.", file=sys.stderr)
+
+    print("[ML] Loading scaler...", file=sys.stderr)
+    scaler = _load_pickle(SCALER_PATH, SCALER_FALLBACK)
+    if scaler is None:
+        print("[ML WARNING] Scaler not found — features will be unscaled.", file=sys.stderr)
+
+    print("[ML] Loading AE threshold...", file=sys.stderr)
+    ae_threshold = _load_pickle(THRESHOLD_PATH, THRESH_FALLBACK)
+    if ae_threshold is None:
+        ae_threshold = 0.05  # conservative default
+        print(f"[ML WARNING] AE threshold not found — using default {ae_threshold}.", file=sys.stderr)
     else:
-        return 0, float(rf_prob), error
+        print(f"[ML] AE reconstruction-error threshold: {ae_threshold:.6f}", file=sys.stderr)
 
-# -------------------------------------------------
-# Continuous Stream Listener (Modified for Go IPC)
-# -------------------------------------------------
+    feat_order = _load_pickle(FEAT_ORDER_PATH)
+    if feat_order is not None:
+        print(f"[ML] Feature order loaded ({len(feat_order)} features).", file=sys.stderr)
+
+    return rf, ae, scaler, ae_threshold, feat_order
+
+
+# ── Inference ────────────────────────────────────────────────────────────────
+
+def predict(raw_vector: list, rf, ae, scaler, ae_threshold, feat_order) -> str:
+    """
+    Returns a result string:
+      <final_label>,rf=<rf_label>,ae=<ae_score:.4f>,conf=<rf_conf:.2f>
+    """
+    try:
+        x = np.array(raw_vector, dtype=np.float32).reshape(1, -1)
+        x = reorder_features(x, feat_order)
+
+        # Clip obvious infinities/NaNs before scaling
+        x = np.nan_to_num(x, nan=0.0, posinf=1e9, neginf=0.0)
+
+        x_scaled = scaler.transform(x) if scaler is not None else x
+
+        # ── Random Forest path ─────────────────────────────────────────────
+        rf_label = 0
+        rf_conf  = 1.0
+        if rf is not None:
+            rf_label = int(rf.predict(x_scaled)[0])
+            proba    = rf.predict_proba(x_scaled)[0]
+            rf_conf  = float(np.max(proba))
+
+        # ── Autoencoder path ───────────────────────────────────────────────
+        ae_score = 0.0
+        ae_label = 0
+        if ae is not None:
+            x_reconstructed = ae.predict(x_scaled, verbose=0)
+            ae_score = float(np.mean(np.square(x_scaled - x_reconstructed)))
+            ae_label = 1 if ae_score > ae_threshold else 0
+
+        # ── Fusion: flag if EITHER path raises alarm ───────────────────────
+        # High-confidence RF benign can suppress a low-margin AE anomaly,
+        # but a definitive RF attack overrides everything.
+        final_label = 0
+        if rf_label == 1 and rf_conf > 0.6:
+            final_label = 1
+        elif ae_label == 1 and ae_score > ae_threshold * 1.5:
+            # Only trigger AE zero-day if score is meaningfully above threshold
+            final_label = 1
+
+        return f"{final_label},rf={rf_label},ae={ae_score:.4f},conf={rf_conf:.2f}"
+
+    except Exception as e:
+        # Never let an exception crash the loop — return safe benign
+        print(f"[ML ERROR] Inference failed: {e}", file=sys.stderr)
+        return "0,rf=0,ae=0.0000,conf=0.00"
+
+
+# ── Streaming main loop ──────────────────────────────────────────────────────
+
 def main():
-    # 1. Signal to the Go agent that models are loaded and we are ready
-    print("READY", flush=True)
+    rf, ae, scaler, ae_threshold, feat_order = load_models()
 
-    # 2. Enter an infinite loop waiting for data from Go via standard input
-    for line in sys.stdin:
+    # Signal readiness to the Go orchestrator
+    print("READY", flush=True)
+    print("[ML] ✅ Inference engine live — reading from stdin.", file=sys.stderr)
+
+    stdin = sys.stdin
+    stdout = sys.stdout
+
+    for line in stdin:
         line = line.strip()
         if not line:
             continue
 
-        # Skip the header row if Go accidentally sends it
-        if "Destination Port" in line:
-            continue
-
         try:
-            # Parse the incoming CSV string from Go into floats
-            values = list(map(float, line.split(",")))
+            parts = line.split(",")
+            if len(parts) != FEATURE_DIM:
+                print(f"[ML WARNING] Expected {FEATURE_DIM} features, got {len(parts)}. Skipping.", file=sys.stderr)
+                print("0,rf=0,ae=0.0000,conf=0.00", flush=True)
+                continue
 
-            # Reconstruct it into a format the predict_flow function expects
-            row_dict = dict(zip(feature_order, values))
-            row_df = pd.Series(row_dict)
+            vector = [float(v) for v in parts]
+            result = predict(vector, rf, ae, scaler, ae_threshold, feat_order)
+            print(result, flush=True)
 
-            # Run inference
-            label, confidence, anomaly_score = predict_flow(row_df)
+        except ValueError as e:
+            print(f"[ML WARNING] Parse error: {e}", file=sys.stderr)
+            print("0,rf=0,ae=0.0000,conf=0.00", flush=True)
 
-            # Print the result and FLUSH the buffer immediately back to Go
-            print(f"{label},{confidence:.6f},{anomaly_score:.6f}", flush=True)
-
-        except Exception as e:
-            # If a row fails, send a structured error back so Go doesn't hang
-            print(f"ERROR,{str(e)},0.0", flush=True)
 
 if __name__ == "__main__":
     main()
